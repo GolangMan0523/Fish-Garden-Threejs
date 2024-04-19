@@ -1,0 +1,40 @@
+---
+  0 debug pnpm:scope: 
+    selected: 1
+    workspacePrefix: null
+  1 info pnpm: 
+    message: "A store server is running. All store manipulations are delegated to it."
+    prefix: "/app"
+  2 debug pnpm:package-json: 
+    initial: 
+      name: "xrgarden"
+      version: "1.0.0"
+      description: "Garden for XR"
+      main: "index.js"
+      scripts: 
+        start: "npm run  build; node ./"
+        build: "rm -rf build/*; rollup -c; find build -maxdepth 1 -not -type d -exec du -h {} \\;"
+        develop: "rollup -w -c; find build -maxdepth 1 -not -type d -exec du -h {} \\;"
+        test: "echo \"Error: no test specified\" && exit 1"
+      author: ""
+      license: "MIT"
+      dependencies: 
+        express: "^4.17.1"
+      devDependencies: 
+        @rollup/plugin-node-resolve: "^9"
+        @tweenjs/tween.js: "^18.6.0"
+        deep-object-diff: "^1.1.0"
+        eslint: "^7"
+        rollup: "^2.29.0"
+        rollup-plugin-commonjs: "^10.1.0"
+        rollup-plugin-terser: "^7.0.2"
+        three: "^0.121.1"
+        webxr-polyfill: "^2.0.3"
+      readme: "# xr-locomotion-starter\n\nStarter repo for THREE.js Locomotion\n\nThis is built using THREE.js and compiles with Rollup.\n\nEdit the files in the `src/` directory to make changes.\n\nDependencies: nodejs\n\nBuild steps:\n\n```\n# install dependencies\nnpm install\n\n# compile everything\nnpm run build\n\n# develop mode\nnpm run develop\n\n#start a local server\nnpm run start\n```\n\nIt's just a static HTML document so sticking it on GitHub pages or any simple http-server would work well.\n"
+      readmeFilename: "README.md"
+      gitHead: "120112f219c5f61b2ea7f11cecf4e8b5a4cee1b6"
+      _id: "xrgarden@1.0.0"
+    prefix: "/app"
+  3 debug pnpm:stage: 
+    prefix: "/app"
+    stage: "resolution_started"
